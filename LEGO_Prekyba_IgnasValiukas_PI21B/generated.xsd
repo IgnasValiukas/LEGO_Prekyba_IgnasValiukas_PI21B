@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Pardavejas" type="PardavejasType"/>
+  <xs:complexType name="paskyraType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="id"/>
+      <xs:element type="xs:string" name="slaptazodis"/>
+      <xs:element type="xs:string" name="vartotojoVardas"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="legoKonstruktoriusType">
+    <xs:sequence>
+      <xs:element name="id">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="legoNr">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="78523"/>
+            <xs:enumeration value="42569"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="pavadinimas">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="F&amp;F Dodge"/>
+            <xs:enumeration value="F&amp;F Porsche"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="legoType">
+    <xs:sequence>
+      <xs:element type="legoKonstruktoriusType" name="legoKonstruktorius" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PardavejasType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="id"/>
+      <xs:element type="xs:string" name="vardas"/>
+      <xs:element type="xs:string" name="pavarde"/>
+      <xs:element type="xs:string" name="telNumeris"/>
+      <xs:element type="paskyraType" name="paskyra"/>
+      <xs:element type="legoType" name="lego"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

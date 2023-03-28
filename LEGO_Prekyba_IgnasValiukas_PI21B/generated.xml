@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Pardavejas>
+    <id>1</id>
+    <vardas>Ignas</vardas>
+    <pavarde>Valiukas</pavarde>
+    <telNumeris>+37060000000</telNumeris>
+    <paskyra>
+        <id>1</id>
+        <slaptazodis>123</slaptazodis>
+        <vartotojoVardas>IgnasVpro</vartotojoVardas>
+    </paskyra>
+    <lego>
+        <legoKonstruktorius>
+            <id>1</id>
+            <legoNr>78523</legoNr>
+            <pavadinimas>F&amp;F Dodge</pavadinimas>
+        </legoKonstruktorius>
+        <legoKonstruktorius>
+            <id>2</id>
+            <legoNr>42569</legoNr>
+            <pavadinimas>F&amp;F Porsche</pavadinimas>
+        </legoKonstruktorius>
+    </lego>
+</Pardavejas>
